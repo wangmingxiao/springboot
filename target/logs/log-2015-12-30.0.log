@@ -1,0 +1,89 @@
+[2015-12-30 16:09:20] [ main ] [ INFO ] [com.umbrellary.Application: 48] Starting Application v1.0.1-RELEASE on Zrui-MacBook-Pro.local with PID 10921 (/Users/Zrui/MyProject/Intellij IDEA/OSAdmin/target/osadmin-1.0.1-RELEASE.jar started by Zrui in /Users/Zrui/MyProject/Intellij IDEA/OSAdmin/target) 
+[2015-12-30 16:09:20] [ main ] [ INFO ] [com.umbrellary.Application: 664] No active profile set, falling back to default profiles: default 
+[2015-12-30 16:09:20] [ main ] [ INFO ] [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext: 578] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3f24ab92: startup date [Wed Dec 30 16:09:20 CST 2015]; root of context hierarchy 
+[2015-12-30 16:09:20] [ pool-1-thread-1 ] [ INFO ] [org.hibernate.validator.internal.util.Version: 17] HV000001: Hibernate Validator 5.2.2.Final 
+[2015-12-30 16:09:22] [ main ] [ INFO ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 328] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3ca14aec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+[2015-12-30 16:09:22] [ main ] [ INFO ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 328] Bean 'redisConfig' of type [class com.umbrellary.config.RedisConfig$$EnhancerBySpringCGLIB$$30fc0f18] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+[2015-12-30 16:09:22] [ main ] [ INFO ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 328] Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$a3ff154a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+[2015-12-30 16:09:23] [ main ] [ INFO ] [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer: 81] Tomcat initialized with port(s): 8080 (http) 
+[2015-12-30 16:09:23] [ main ] [ INFO ] [org.apache.catalina.core.StandardService: 180] Starting service Tomcat 
+[2015-12-30 16:09:23] [ main ] [ INFO ] [org.apache.catalina.core.StandardEngine: 180] Starting Servlet Engine: Apache Tomcat/8.0.30 
+[2015-12-30 16:09:23] [ localhost-startStop-1 ] [ INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 180] Initializing Spring embedded WebApplicationContext 
+[2015-12-30 16:09:23] [ localhost-startStop-1 ] [ INFO ] [org.springframework.web.context.ContextLoader: 272] Root WebApplicationContext: initialization completed in 3117 ms 
+[2015-12-30 16:09:23] [ localhost-startStop-1 ] [ INFO ] [org.springframework.boot.context.embedded.ServletRegistrationBean: 189] Mapping servlet: 'dispatcherServlet' to [/] 
+[2015-12-30 16:09:23] [ localhost-startStop-1 ] [ INFO ] [org.springframework.boot.context.embedded.FilterRegistrationBean: 258] Mapping filter: 'characterEncodingFilter' to: [/*] 
+[2015-12-30 16:09:23] [ localhost-startStop-1 ] [ INFO ] [org.springframework.boot.context.embedded.FilterRegistrationBean: 258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+[2015-12-30 16:09:24] [ localhost-startStop-1 ] [ INFO ] [org.springframework.boot.context.embedded.FilterRegistrationBean: 258] Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+[2015-12-30 16:09:24] [ localhost-startStop-1 ] [ INFO ] [org.springframework.boot.context.embedded.FilterRegistrationBean: 258] Mapping filter: 'requestContextFilter' to: [/*] 
+[2015-12-30 16:09:24] [ main ] [ INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean: 339] Building JPA container EntityManagerFactory for persistence unit 'default' 
+[2015-12-30 16:09:24] [ main ] [ INFO ] [org.hibernate.jpa.internal.util.LogHelper: 46] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] 
+[2015-12-30 16:09:24] [ main ] [ INFO ] [org.hibernate.Version: 54] HHH000412: Hibernate Core {4.3.11.Final} 
+[2015-12-30 16:09:24] [ main ] [ INFO ] [org.hibernate.cfg.Environment: 239] HHH000206: hibernate.properties not found 
+[2015-12-30 16:09:24] [ main ] [ INFO ] [org.hibernate.cfg.Environment: 346] HHH000021: Bytecode provider name : javassist 
+[2015-12-30 16:09:25] [ main ] [ INFO ] [org.hibernate.annotations.common.Version: 66] HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+[2015-12-30 16:09:59] [ main ] [ INFO ] [com.umbrellary.Application: 48] Starting Application v1.0.1-RELEASE on Zrui-MacBook-Pro.local with PID 10924 (/Users/Zrui/MyProject/Intellij IDEA/OSAdmin/target/osadmin-1.0.1-RELEASE.jar started by Zrui in /Users/Zrui/MyProject/Intellij IDEA/OSAdmin/target) 
+[2015-12-30 16:10:00] [ main ] [ INFO ] [com.umbrellary.Application: 664] No active profile set, falling back to default profiles: default 
+[2015-12-30 16:10:00] [ main ] [ INFO ] [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext: 578] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6aa543f0: startup date [Wed Dec 30 16:10:00 CST 2015]; root of context hierarchy 
+[2015-12-30 16:10:00] [ pool-1-thread-1 ] [ INFO ] [org.hibernate.validator.internal.util.Version: 17] HV000001: Hibernate Validator 5.2.2.Final 
+[2015-12-30 16:10:02] [ main ] [ INFO ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 328] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c812c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+[2015-12-30 16:10:02] [ main ] [ INFO ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 328] Bean 'redisConfig' of type [class com.umbrellary.config.RedisConfig$$EnhancerBySpringCGLIB$$f522d6ef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+[2015-12-30 16:10:02] [ main ] [ INFO ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 328] Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$6825dd21] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+[2015-12-30 16:10:03] [ main ] [ INFO ] [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer: 81] Tomcat initialized with port(s): 8080 (http) 
+[2015-12-30 16:10:03] [ main ] [ INFO ] [org.apache.catalina.core.StandardService: 180] Starting service Tomcat 
+[2015-12-30 16:10:03] [ main ] [ INFO ] [org.apache.catalina.core.StandardEngine: 180] Starting Servlet Engine: Apache Tomcat/8.0.30 
+[2015-12-30 16:10:03] [ localhost-startStop-1 ] [ INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 180] Initializing Spring embedded WebApplicationContext 
+[2015-12-30 16:10:03] [ localhost-startStop-1 ] [ INFO ] [org.springframework.web.context.ContextLoader: 272] Root WebApplicationContext: initialization completed in 3019 ms 
+[2015-12-30 16:10:03] [ localhost-startStop-1 ] [ INFO ] [org.springframework.boot.context.embedded.ServletRegistrationBean: 189] Mapping servlet: 'dispatcherServlet' to [/] 
+[2015-12-30 16:10:03] [ localhost-startStop-1 ] [ INFO ] [org.springframework.boot.context.embedded.FilterRegistrationBean: 258] Mapping filter: 'characterEncodingFilter' to: [/*] 
+[2015-12-30 16:10:03] [ localhost-startStop-1 ] [ INFO ] [org.springframework.boot.context.embedded.FilterRegistrationBean: 258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+[2015-12-30 16:10:03] [ localhost-startStop-1 ] [ INFO ] [org.springframework.boot.context.embedded.FilterRegistrationBean: 258] Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+[2015-12-30 16:10:03] [ localhost-startStop-1 ] [ INFO ] [org.springframework.boot.context.embedded.FilterRegistrationBean: 258] Mapping filter: 'requestContextFilter' to: [/*] 
+[2015-12-30 16:10:04] [ main ] [ INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean: 339] Building JPA container EntityManagerFactory for persistence unit 'default' 
+[2015-12-30 16:10:04] [ main ] [ INFO ] [org.hibernate.jpa.internal.util.LogHelper: 46] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] 
+[2015-12-30 16:10:04] [ main ] [ INFO ] [org.hibernate.Version: 54] HHH000412: Hibernate Core {4.3.11.Final} 
+[2015-12-30 16:10:04] [ main ] [ INFO ] [org.hibernate.cfg.Environment: 239] HHH000206: hibernate.properties not found 
+[2015-12-30 16:10:04] [ main ] [ INFO ] [org.hibernate.cfg.Environment: 346] HHH000021: Bytecode provider name : javassist 
+[2015-12-30 16:10:04] [ main ] [ INFO ] [org.hibernate.annotations.common.Version: 66] HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+[2015-12-30 16:10:06] [ main ] [ INFO ] [org.hibernate.dialect.Dialect: 145] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+[2015-12-30 16:10:06] [ main ] [ INFO ] [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory: 47] HHH000397: Using ASTQueryTranslatorFactory 
+[2015-12-30 16:10:06] [ main ] [ INFO ] [org.hibernate.tool.hbm2ddl.SchemaUpdate: 207] HHH000228: Running hbm2ddl schema update 
+[2015-12-30 16:10:06] [ main ] [ INFO ] [org.hibernate.tool.hbm2ddl.SchemaUpdate: 218] HHH000102: Fetching database metadata 
+[2015-12-30 16:10:06] [ main ] [ INFO ] [org.hibernate.tool.hbm2ddl.SchemaUpdate: 230] HHH000396: Updating schema 
+[2015-12-30 16:10:06] [ main ] [ INFO ] [org.hibernate.tool.hbm2ddl.TableMetadata: 65] HHH000261: Table found: spring.home 
+[2015-12-30 16:10:06] [ main ] [ INFO ] [org.hibernate.tool.hbm2ddl.TableMetadata: 66] HHH000037: Columns: [number, address, id] 
+[2015-12-30 16:10:06] [ main ] [ INFO ] [org.hibernate.tool.hbm2ddl.TableMetadata: 68] HHH000108: Foreign keys: [] 
+[2015-12-30 16:10:06] [ main ] [ INFO ] [org.hibernate.tool.hbm2ddl.TableMetadata: 69] HHH000126: Indexes: [primary] 
+[2015-12-30 16:10:06] [ main ] [ INFO ] [org.hibernate.tool.hbm2ddl.TableMetadata: 65] HHH000261: Table found: spring.user 
+[2015-12-30 16:10:06] [ main ] [ INFO ] [org.hibernate.tool.hbm2ddl.TableMetadata: 66] HHH000037: Columns: [password, name, id, email] 
+[2015-12-30 16:10:06] [ main ] [ INFO ] [org.hibernate.tool.hbm2ddl.TableMetadata: 68] HHH000108: Foreign keys: [] 
+[2015-12-30 16:10:06] [ main ] [ INFO ] [org.hibernate.tool.hbm2ddl.TableMetadata: 69] HHH000126: Indexes: [primary] 
+[2015-12-30 16:10:06] [ main ] [ INFO ] [org.hibernate.tool.hbm2ddl.SchemaUpdate: 267] HHH000232: Schema update complete 
+[2015-12-30 16:10:07] [ main ] [ INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter: 532] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6aa543f0: startup date [Wed Dec 30 16:10:00 CST 2015]; root of context hierarchy 
+[2015-12-30 16:10:07] [ main ] [ INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping: 527] Mapped "{[/api1]}" onto public java.lang.String com.umbrellary.contoller.MainController.api1(java.lang.String,org.springframework.ui.Model) 
+[2015-12-30 16:10:07] [ main ] [ INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping: 527] Mapped "{[/api3/{day}]}" onto public java.lang.String com.umbrellary.contoller.MainController.getForDay(java.lang.String,org.springframework.ui.Model) 
+[2015-12-30 16:10:07] [ main ] [ INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping: 527] Mapped "{[/Login]}" onto public java.lang.String com.umbrellary.contoller.MainController.Login(java.lang.String,java.lang.String,org.springframework.ui.Model) 
+[2015-12-30 16:10:07] [ main ] [ INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping: 527] Mapped "{[/api4]}" onto public java.lang.String com.umbrellary.contoller.MainController.api4() 
+[2015-12-30 16:10:07] [ main ] [ INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping: 527] Mapped "{[/api5]}" onto public java.lang.String com.umbrellary.contoller.MainController.api5() 
+[2015-12-30 16:10:07] [ main ] [ INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping: 527] Mapped "{[/api6]}" onto public java.lang.String com.umbrellary.contoller.MainController.api6() 
+[2015-12-30 16:10:07] [ main ] [ INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping: 527] Mapped "{[/api7]}" onto public java.lang.String com.umbrellary.contoller.MainController.api7() 
+[2015-12-30 16:10:07] [ main ] [ INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping: 527] Mapped "{[/api2]}" onto public java.lang.String com.umbrellary.contoller.MainController.api2(java.lang.String,org.springframework.ui.Model) 
+[2015-12-30 16:10:07] [ main ] [ INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping: 527] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+[2015-12-30 16:10:07] [ main ] [ INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping: 527] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+[2015-12-30 16:10:07] [ main ] [ INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping: 341] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[2015-12-30 16:10:07] [ main ] [ INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping: 341] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[2015-12-30 16:10:08] [ main ] [ INFO ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping: 341] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[2015-12-30 16:10:08] [ main ] [ INFO ] [org.springframework.web.servlet.view.velocity.VelocityConfigurer: 140] ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine 
+[2015-12-30 16:10:08] [ main ] [ INFO ] [org.springframework.ui.velocity.SpringResourceLoader: 92] SpringResourceLoader for Velocity: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6aa543f0: startup date [Wed Dec 30 16:10:00 CST 2015]; root of context hierarchy] and resource loader paths [classpath:/templates/] 
+[2015-12-30 16:10:08] [ main ] [ INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter: 431] Registering beans for JMX exposure on startup 
+[2015-12-30 16:10:08] [ main ] [ INFO ] [org.apache.coyote.http11.Http11NioProtocol: 180] Initializing ProtocolHandler ["http-nio-8080"] 
+[2015-12-30 16:10:08] [ main ] [ INFO ] [org.apache.coyote.http11.Http11NioProtocol: 180] Starting ProtocolHandler ["http-nio-8080"] 
+[2015-12-30 16:10:08] [ main ] [ INFO ] [org.apache.tomcat.util.net.NioSelectorPool: 180] Using a shared selector for servlet write/read 
+[2015-12-30 16:10:08] [ main ] [ INFO ] [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer: 162] Tomcat started on port(s): 8080 (http) 
+[2015-12-30 16:10:08] [ main ] [ INFO ] [com.umbrellary.Application: 57] Started Application in 9.259 seconds (JVM running for 10.052) 
+[2015-12-30 16:10:12] [ Thread-6 ] [ INFO ] [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext: 960] Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6aa543f0: startup date [Wed Dec 30 16:10:00 CST 2015]; root of context hierarchy 
+[2015-12-30 16:10:12] [ Thread-6 ] [ INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter: 449] Unregistering JMX-exposed beans on shutdown 
+[2015-12-30 16:10:12] [ Thread-6 ] [ INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean: 462] Closing JPA EntityManagerFactory for persistence unit 'default' 
