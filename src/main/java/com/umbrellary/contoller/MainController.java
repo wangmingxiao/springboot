@@ -82,31 +82,30 @@ public class MainController {
         return "logger success";
     }
 
-    @RequestMapping("api7")
+    @RequestMapping(value = "api7/{key}/{value}")
     @ResponseBody
-    public String api7() {
-        return cacheService.stringCache("这是key");
+    public String api7(@PathVariable String key, @PathVariable String value) {
+        return iCacheService.stringCache(key, value);
     }
 
     @RequestMapping("api8")
     @ResponseBody
     @MethodCost
     public String api8() {
-        for (int i = 0; i < 10000; i++) {
-            cacheService.memsave("这是key" + i, "合适内容");
-        }
-        return "存储成功";
+        return iCacheService.memsave("张瑞", "恍恍惚惚恍恍惚惚恍恍惚惚恍恍惚惚哈哈哈");
     }
 
     @RequestMapping("api9")
     @ResponseBody
     @MethodCost
     public String api9() {
-        for (int i = 0; i < 10000; i++) {
-            cacheService.memdel("这是key" + i);
-        }
+        iCacheService.memdel("张瑞");
         return "删除成功";
     }
+
+    @Autowired
+    @Qualifier("cacheService")
+    private ICacheService iCacheService;
 
     @Autowired
     @Qualifier("homeService")
@@ -116,7 +115,4 @@ public class MainController {
     @Qualifier("userService")
     private IUserService userService;
 
-    @Autowired
-    @Qualifier("cacheService")
-    private ICacheService cacheService;
 }

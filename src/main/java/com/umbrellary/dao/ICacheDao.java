@@ -1,6 +1,7 @@
-package com.umbrellary.service;
+package com.umbrellary.dao;
 
-public interface ICacheService {
+public interface ICacheDao {
+
     public String stringCache(String key, String value);
 
     public String memsave(String key, String value);

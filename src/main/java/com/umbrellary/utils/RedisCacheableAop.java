@@ -24,12 +24,7 @@ public class RedisCacheableAop {
         if (cache.handler() == RedisCache.Handler.Save) {
             String key = getCacheKey(point, cache);
 
-            Object value = redisTemplate.opsForValue().get(key);
-            if (value != null) {
-                return value;
-            }
-
-            value = point.proceed();
+            Object value = point.proceed();
 
             if (cache.expire() <= 0) {
                 redisTemplate.opsForValue().set(key, value);
