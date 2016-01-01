@@ -10,7 +10,13 @@ import java.lang.annotation.Target;
 @Target({ElementType.METHOD})
 public @interface RedisCache {
 
+    public enum Handler {
+        Save, Delete, Clear
+    }
+
     public String key() default "";//缓存key
 
     public int expire() default 0;//缓存多少秒,默认无限期
+
+    public Handler handler() default Handler.Save;//操作类型
 }

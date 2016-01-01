@@ -90,11 +90,22 @@ public class MainController {
 
     @RequestMapping("api8")
     @ResponseBody
+    @MethodCost
     public String api8() {
         for (int i = 0; i < 10000; i++) {
-            cacheService.memtest("这是key", "");
+            cacheService.memsave("这是key" + i, "合适内容");
         }
         return "存储成功";
+    }
+
+    @RequestMapping("api9")
+    @ResponseBody
+    @MethodCost
+    public String api9() {
+        for (int i = 0; i < 10000; i++) {
+            cacheService.memdel("这是key" + i);
+        }
+        return "删除成功";
     }
 
     @Autowired

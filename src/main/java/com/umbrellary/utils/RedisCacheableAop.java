@@ -6,7 +6,6 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Component;
 
 import java.lang.annotation.Annotation;
@@ -22,19 +21,33 @@ public class RedisCacheableAop {
     @Around("@annotation(cache)")
     public Object cached(final ProceedingJoinPoint point, RedisCache cache) throws Throwable {
 
-        String key = getCacheKey(point, cache);
-        ValueOperations<String, Object> valueOper = redisTemplate.opsForValue();
-        Object value = valueOper.get(key);//从缓存获取数据
-        if (value != null) return value;//如果有数据,则直接返回
+        if (cache.handler() == RedisCache.Handler.Save) {
+            String key = getCacheKey(point, cache);
 
-        value = point.proceed();//跳过缓存,到后端查询数据
+            Object value = redisTemplate.opsForValue().get(key);
+            if (value != null) {
+                return value;
+            }
 
-        if (cache.expire() <= 0) {//如果没有设置过期时间,则无限期缓存
-            valueOper.set(key, value);
-        } else {//否则设置缓存时间
-            valueOper.set(key, value, cache.expire(), TimeUnit.SECONDS);
+            value = point.proceed();
+
+            if (cache.expire() <= 0) {
+                redisTemplate.opsForValue().set(key, value);
+            } else {
+                redisTemplate.opsForValue().set(key, value, cache.expire(), TimeUnit.SECONDS);
+            }
+            return value;
+
+        } else if (cache.handler() == RedisCache.Handler.Delete) {
+            String key = getCacheKey(point, cache);
+
+            redisTemplate.delete(key);
+
+            return point.proceed();
+        } else {
+
+            return point.proceed();
         }
-        return value;
     }
 
     /**
@@ -47,7 +60,7 @@ public class RedisCacheableAop {
     private String getCacheKey(ProceedingJoinPoint point, RedisCache cache) throws NoSuchMethodException {
 
         StringBuilder buf = new StringBuilder();
-        buf.append(point.getSignature().getDeclaringTypeName()).append(".").append(point.getSignature().getName());
+        buf.append(point.getSignature().getDeclaringTypeName());//.append(".").append(point.getSignature().getName())
         if (cache.key().length() > 0) {
             buf.append(".").append(cache.key());
         }
