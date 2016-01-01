@@ -1,7 +1,8 @@
 package com.umbrellary.serviceimpl;
 
-import com.umbrellary.config.RedisCache;
-import com.umbrellary.config.RedisKey;
+import com.umbrellary.utils.MethodCost;
+import com.umbrellary.utils.RedisCache;
+import com.umbrellary.utils.RedisKey;
 import com.umbrellary.service.ICacheService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -17,15 +18,16 @@ public class CacheService implements ICacheService {
     private RedisTemplate redisTemplate;
 
     @Override
-    @RedisCache(expire = 15)
+    @RedisCache(expire = 60)
     public String stringCache(@RedisKey String key) {
         return "这里是缓存内容";
     }
 
     @Override
-    public String stringCache2() {
-        ValueOperations<String, Object> redis = redisTemplate.opsForValue();
-        redis.set("键", "值", 15, TimeUnit.SECONDS);
-        return "15秒键值对存储成功";
+    @RedisCache(expire = 0)
+    @MethodCost
+    public String memtest(@RedisKey String key, String value) {
+        return value;
     }
+
 }

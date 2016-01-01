@@ -4,6 +4,7 @@ import com.umbrellary.service.ICacheService;
 import com.umbrellary.service.IHomeService;
 import com.umbrellary.service.IUserService;
 import com.umbrellary.serviceimpl.UserService;
+import com.umbrellary.utils.MethodCost;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -85,6 +86,15 @@ public class MainController {
     @ResponseBody
     public String api7() {
         return cacheService.stringCache("这是key");
+    }
+
+    @RequestMapping("api8")
+    @ResponseBody
+    public String api8() {
+        for (int i = 0; i < 10000; i++) {
+            cacheService.memtest("这是key", "");
+        }
+        return "存储成功";
     }
 
     @Autowired

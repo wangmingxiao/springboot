@@ -1,4 +1,4 @@
-package com.umbrellary.config;
+package com.umbrellary.utils;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;

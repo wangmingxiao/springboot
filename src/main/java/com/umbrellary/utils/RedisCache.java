@@ -1,4 +1,4 @@
-package com.umbrellary.config;
+package com.umbrellary.utils;
 
 
 import java.lang.annotation.ElementType;
