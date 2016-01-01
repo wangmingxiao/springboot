@@ -14,11 +14,12 @@ public class MethodCostAop {
     @Around("@annotation(methodcost)")
     public Object around(ProceedingJoinPoint point, MethodCost methodcost) throws Throwable {
         Logger logger = LoggerFactory.getLogger(MethodCostAop.class);
-        long start = System.currentTimeMillis();
+        double start = (double) System.currentTimeMillis() / 1000.0;
 
         Object result = point.proceed();
 
-        logger.info(point.getSignature().getName() + " cost: " + String.valueOf(System.currentTimeMillis() - start) + "s");
+        double end = (double) System.currentTimeMillis() / 1000.0;
+        logger.info(point.getSignature().getName() + " cost: " + new java.text.DecimalFormat("#.00").format(end - start) + "s");
         return result;
     }
 }
