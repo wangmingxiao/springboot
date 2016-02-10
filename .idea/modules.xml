@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/OSAdmin.iml" filepath="$PROJECT_DIR$/OSAdmin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PiWeb.iml" filepath="$PROJECT_DIR$/PiWeb.iml" />
     </modules>
   </component>
 </project>
