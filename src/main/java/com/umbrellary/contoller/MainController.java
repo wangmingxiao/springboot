@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -38,6 +39,20 @@ public class MainController {
 
         return "greeting";
     }
+
+    @RequestMapping("api21")
+    public String api21(@RequestParam(value = "name", required = false, defaultValue = "World") String name) {
+        ModelAndView modelAndView = new ModelAndView("greeting");
+
+        modelAndView.addObject("zruiname", name);
+        Map m = new HashMap<>();
+        m.put("key1", "va11111");
+        m.put("key2", "15850164768");
+        modelAndView.addObject("zrui", m);
+
+        return "greeting";
+    }
+
 
     @RequestMapping(value = "api3/{day}")
     public String getForDay(@PathVariable String day, Model model) {
