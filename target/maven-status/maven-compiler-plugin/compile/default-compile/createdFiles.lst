@@ -17,7 +17,6 @@ com/umbrellary/daoimpl/CacheDaoimpl.class
 com/umbrellary/serviceimpl/CacheService.class
 com/umbrellary/dao/IUserDao.class
 com/umbrellary/dao/ICacheDao.class
-com/umbrellary/config/WebSocketConfig.class
 com/umbrellary/utils/RedisKey.class
 com/umbrellary/service/ICacheService.class
 com/umbrellary/utils/MethodCostAop.class

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<component name="dataSourceStorage">
-  <data-source name="MySQL - spring@192.168.44.110" uuid="f3886d7b-678e-4c2a-abf2-f38865c45968">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
-  </data-source>
-  <data-source name="MySQL - spring@192.168.1.33" uuid="56a0e320-8497-4708-b105-3966494ed4de">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
-  </data-source>
-</component>

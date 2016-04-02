@@ -22,14 +22,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="OSAdmin" />
-        <module name="SpringBoot" />
         <module name="springboot" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="OSAdmin" target="1.8" />
-      <module name="SpringBoot" target="1.8" />
       <module name="springboot" target="1.8" />
     </bytecodeTargetLevel>
   </component>

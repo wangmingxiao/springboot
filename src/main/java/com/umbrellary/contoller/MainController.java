@@ -41,7 +41,7 @@ public class MainController {
     }
 
     @RequestMapping("api21")
-    public String api21(@RequestParam(value = "name", required = false, defaultValue = "World") String name) {
+    public ModelAndView api21(@RequestParam(value = "name", required = false, defaultValue = "World") String name) {
         ModelAndView modelAndView = new ModelAndView("greeting");
 
         modelAndView.addObject("zruiname", name);
@@ -50,7 +50,7 @@ public class MainController {
         m.put("key2", "15850164768");
         modelAndView.addObject("zrui", m);
 
-        return "greeting";
+        return modelAndView;
     }
 
 
